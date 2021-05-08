@@ -22,21 +22,21 @@
   }
 ]
 
-// function decryptMessage(message) {
-//   const result = message.split('');
-//   let i = 0;
+function decryptMessage(message) {
+  const result = message.split('');
+  let i = 0;
 
-//   for (; ;) {
-//     if (i < result.length / 2) {
-//       const num = result[i];
+  for (; ;) {
+    if (i < result.length / 2) {
+      const num = result[i];
 
-//       result[i] = result[result.length - (i + 1)];
-//       result[result.length - (i + 1)] = num;
-//     } else {
-//       break;
-//     }
-//     i++;
-//   }
+      result[i] = result[result.length - (i + 1)];
+      result[result.length - (i + 1)] = num;
+    } else {
+      break;
+    }
+    i++;
+  }
 
-//   return result.join('');
-// }
+  return result.join('');
+}

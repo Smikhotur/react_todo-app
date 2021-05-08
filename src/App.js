@@ -69,7 +69,6 @@ export const App = () => {
   const completedTodos = todos.filter(todo => todo.completed);
 
   const location = useLocation();
-
   const { pathname } = location;
 
   const filterTodos = () => {
